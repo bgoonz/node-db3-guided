@@ -33,6 +33,15 @@ router.get("/:id", (req, res) => {
     });
 });
 
+
+/*
+Trying to build 
+select u.username, p.contents
+from posts as p
+join users as u
+    on p.user_id = u.id;
+
+*/
 router.get("/:id/posts", async (req, res, next) => {
   try {
     throw new Error('argh!!!!!!')
