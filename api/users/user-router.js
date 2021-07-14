@@ -33,6 +33,8 @@ router.get("/:id", (req, res) => {
     });
 });
 
+router.get("/:")
+
 router.post("/", (req, res) => {
   const userData = req.body;
 
