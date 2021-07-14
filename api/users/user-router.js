@@ -35,7 +35,7 @@ router.get("/:id", (req, res) => {
 
 router.get("/:id/posts", async (req, res, next) => {
   try {
-    
+    throw new Error('argh')
   } catch (err) {
     next(err)
   }
