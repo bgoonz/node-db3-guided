@@ -33,7 +33,13 @@ router.get("/:id", (req, res) => {
     });
 });
 
-router.get("/:id/posts")
+router.get("/:id/posts", async (req, res, next) => {
+  try {
+    
+  } catch (err) {
+    next(err)
+  }
+})
 
 router.post("/", (req, res) => {
   const userData = req.body;
