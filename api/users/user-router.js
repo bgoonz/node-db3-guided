@@ -33,7 +33,7 @@ router.get("/:id", (req, res) => {
     });
 });
 
-router.get("/:")
+router.get("/:id/posts")
 
 router.post("/", (req, res) => {
   const userData = req.body;
